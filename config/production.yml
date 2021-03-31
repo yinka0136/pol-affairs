@@ -1,0 +1,10 @@
+db:
+  host: 'ec2-18-214-208-89.compute-1.amazonaws.com'
+  username: 'wguyrzuyyveabx'
+  password: 'dc29e738126cb9ea600bb176b7490594b167a2fc928f2e9face0647171a501c3'
+  database: 'd95mfvfu2cb19a'
+  synchronize: false
+  ssl: true
+  extra:
+    ssl:
+      rejectUnauthorized: false
