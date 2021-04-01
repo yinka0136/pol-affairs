@@ -18,12 +18,12 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { GetEventFilterDTO } from 'src/Event/dtos/get-Event-dto';
-import { Event } from 'src/Event/Event.entity';
 import { DeleteResult } from 'typeorm';
 import { CreateEventDTO } from './dtos/create-event-dto';
 import { PaginatedResultDto } from 'src/shared/dto/pagination.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { GetEventFilterDTO } from './dtos/get-event-dto';
+import { Event } from './event.entity';
 
 @Controller('event')
 @ApiTags('events')
