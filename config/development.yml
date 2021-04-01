@@ -1,0 +1,10 @@
+db:
+  host: 'localhost'
+  username: 'postgres'
+  password: '@ONLYONE1826b'
+  database: 'police'
+  synchronize: true
+  ssl: false
+
+jwt:
+  secret: 'yinka0136'
