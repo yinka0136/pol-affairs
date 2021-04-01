@@ -564,12 +564,12 @@ import {
 } from &#x27;@nestjs/common&#x27;;
 import { AuthGuard } from &#x27;@nestjs/passport&#x27;;
 import { ApiBearerAuth, ApiTags } from &#x27;@nestjs/swagger&#x27;;
-import { GetEventFilterDTO } from &#x27;src/Event/dtos/get-Event-dto&#x27;;
-import { Event } from &#x27;src/Event/Event.entity&#x27;;
 import { DeleteResult } from &#x27;typeorm&#x27;;
 import { CreateEventDTO } from &#x27;./dtos/create-event-dto&#x27;;
 import { PaginatedResultDto } from &#x27;src/shared/dto/pagination.dto&#x27;;
 import { FileInterceptor } from &#x27;@nestjs/platform-express&#x27;;
+import { GetEventFilterDTO } from &#x27;./dtos/get-event-dto&#x27;;
+import { Event } from &#x27;./event.entity&#x27;;
 
 @Controller(&#x27;event&#x27;)
 @ApiTags(&#x27;events&#x27;)

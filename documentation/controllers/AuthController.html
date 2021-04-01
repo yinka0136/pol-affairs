@@ -84,6 +84,9 @@
                             <li>
                                 <a href="#login">login</a>
                             </li>
+                            <li>
+                                <a href="#signUp">signUp</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -130,8 +133,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="40"
-                            class="link-to-prism">src/auth/auth.controller.ts:40</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/auth/auth.controller.ts:28</a></div>
                 </td>
             </tr>
 
@@ -178,6 +181,83 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signUp"></a>
+                    <span class="name">
+                        <b>
+                            signUp
+                        </b>
+                        <a href="#signUp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>signUp(authCredentialsDTO: <a href="../classes/AuthCredentialsDTO.html">AuthCredentialsDTO</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/sign_up&#x27;)<br />@UsePipes(ValidationPipe)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/auth/auth.controller.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>authCredentialsDTO</td>
+                                    <td>
+                                                <code><a href="../classes/AuthCredentialsDTO.html" target="_self" >AuthCredentialsDTO</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/User.html" target="_self" >Promise&lt;User&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>    </div>
 
 
@@ -196,30 +276,18 @@ import {
 import { FileInterceptor } from &#x27;@nestjs/platform-express&#x27;;
 import { ApiBearerAuth, ApiTags } from &#x27;@nestjs/swagger&#x27;;
 import { AuthService } from &#x27;./auth.service&#x27;;
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 import { AuthCredentialsDTO } from &#x27;src/auth/dtos/auth-dto&#x27;;
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
-import { AuthCredentialsDTO } from &#x27;./dto/auth-dto&#x27;;
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; a006562e2de7d9b64565680c8ac17ac1f23e926e
 
 @Controller(&#x27;auth&#x27;)
 @ApiTags(&#x27;Authentication&#x27;)
 @ApiBearerAuth()
 export class AuthController {
   constructor(private authService: AuthService) {}
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-  // @Post(&#x27;/sign_up&#x27;)
-  // @UsePipes(ValidationPipe)
-  // signUp(@Body() authCredentialsDTO: AuthCredentialsDTO): Promise&lt;User&gt; {
-  //   return this.authService.signUp(authCredentialsDTO);
-  // }
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
   @Post(&#x27;/sign_up&#x27;)
   @UsePipes(ValidationPipe)
   signUp(@Body() authCredentialsDTO: AuthCredentialsDTO): Promise&lt;User&gt; {
     return this.authService.signUp(authCredentialsDTO);
   }
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; a006562e2de7d9b64565680c8ac17ac1f23e926e
   @Post(&#x27;/login&#x27;)
   login(
     @Body() authCredentialsDTO: AuthCredentialsDTO,

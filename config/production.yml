@@ -1,10 +1,10 @@
 db:
-  host: 'ec2-54-167-168-52.compute-1.amazonaws.com'
-  username: 'zxchndrkhxiuwq'
-  password: 'a0d47a29b67805a9b0cf83cea7c41a6dc6bf1302d337a9fefa5badf9df563090'
-  database: 'd64b6oo613uvvc'
-  synchronize: false
-  ssl: true
+  host: 'ec2-52-21-153-207.compute-1.amazonaws.com'
+  username: 'dirgmmlehiemqp'
+  password: '0a206ed996a16898aee3634ce7aeedc8092ecf7ea8812e628dc4c88d39717f69'
+  database: 'dju71gktk025q'
+  synchronize: true
+  ssl: false
   extra:
     ssl:
       rejectUnauthorized: false
