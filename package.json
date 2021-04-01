@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist && npm run build",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
+    "start": "node dist/main",
     "start:dev": "concurrently --kill-others \"SET NODE_ENV=development&& nest start --watch\" \"npx compodoc -p tsconfig.json -s\"",
     "start:debug": "nest start --debug --watch",
     "start:prod": "concurrently --kill-others \"SET NODE_ENV=production&& node dist/main\" \"npx compodoc -p tsconfig.json -s\"",
