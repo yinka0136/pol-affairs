@@ -1,8 +1,8 @@
 db:
-  host: 'ec2-18-214-208-89.compute-1.amazonaws.com'
-  username: 'wguyrzuyyveabx'
-  password: 'dc29e738126cb9ea600bb176b7490594b167a2fc928f2e9face0647171a501c3'
-  database: 'd95mfvfu2cb19a'
+  host: 'ec2-54-167-168-52.compute-1.amazonaws.com'
+  username: 'zxchndrkhxiuwq'
+  password: 'a0d47a29b67805a9b0cf83cea7c41a6dc6bf1302d337a9fefa5badf9df563090'
+  database: 'd64b6oo613uvvc'
   synchronize: false
   ssl: true
   extra:
