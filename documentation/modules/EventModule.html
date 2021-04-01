@@ -191,7 +191,8 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { EventRepository } from &#x27;./event.repository&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+import { EventRepository } from &#x27;./event.repository&#x27;;
 import { TypeOrmModule } from &#x27;@nestjs/typeorm&#x27;;
 import { EventService } from &#x27;./event.service&#x27;;
 import { Module } from &#x27;@nestjs/common&#x27;;
@@ -208,6 +209,13 @@ import { SharedModule } from &#x27;src/shared/shared.module&#x27;;
   ],
   controllers: [EventController],
   providers: [EventService],
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+import { Module } from &#x27;@nestjs/common&#x27;;
+import { EventController } from &#x27;./event.controller&#x27;;
+
+@Module({
+  controllers: [EventController]
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; a006562e2de7d9b64565680c8ac17ac1f23e926e
 })
 export class EventModule {}
 </code></pre>

@@ -143,8 +143,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="49"
-                            class="link-to-prism">src/auth/user.repository.ts:49</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/auth/user.repository.ts:54</a></div>
                 </td>
             </tr>
 
@@ -227,8 +227,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="14"
-                            class="link-to-prism">src/auth/user.repository.ts:14</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/auth/user.repository.ts:19</a></div>
                 </td>
             </tr>
 
@@ -299,8 +299,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="32"
-                            class="link-to-prism">src/auth/user.repository.ts:32</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/auth/user.repository.ts:37</a></div>
                 </td>
             </tr>
 
@@ -365,8 +365,13 @@
 import { EntityRepository, Repository } from &#x27;typeorm&#x27;;
 import { User } from &#x27;./user.entity&#x27;;
 import * as bcrypt from &#x27;bcrypt&#x27;;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 import { TokenPayload } from &#x27;./token.model&#x27;;
 import { AuthCredentialsDTO } from &#x27;./dtos/auth-dto&#x27;;
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+import { AuthCredentialsDTO } from &#x27;./dto/auth-dto&#x27;;
+import { TokenPayload } from &#x27;./token.model&#x27;;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; a006562e2de7d9b64565680c8ac17ac1f23e926e
 const logger &#x3D; new Logger();
 @EntityRepository(User)
 export class UserRepository extends Repository&lt;User&gt; {

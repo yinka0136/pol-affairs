@@ -130,8 +130,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="28"
-                            class="link-to-prism">src/auth/auth.controller.ts:28</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/auth/auth.controller.ts:40</a></div>
                 </td>
             </tr>
 
@@ -196,18 +196,30 @@ import {
 import { FileInterceptor } from &#x27;@nestjs/platform-express&#x27;;
 import { ApiBearerAuth, ApiTags } from &#x27;@nestjs/swagger&#x27;;
 import { AuthService } from &#x27;./auth.service&#x27;;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 import { AuthCredentialsDTO } from &#x27;src/auth/dtos/auth-dto&#x27;;
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+import { AuthCredentialsDTO } from &#x27;./dto/auth-dto&#x27;;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; a006562e2de7d9b64565680c8ac17ac1f23e926e
 
 @Controller(&#x27;auth&#x27;)
 @ApiTags(&#x27;Authentication&#x27;)
 @ApiBearerAuth()
 export class AuthController {
   constructor(private authService: AuthService) {}
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
   // @Post(&#x27;/sign_up&#x27;)
   // @UsePipes(ValidationPipe)
   // signUp(@Body() authCredentialsDTO: AuthCredentialsDTO): Promise&lt;User&gt; {
   //   return this.authService.signUp(authCredentialsDTO);
   // }
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+  @Post(&#x27;/sign_up&#x27;)
+  @UsePipes(ValidationPipe)
+  signUp(@Body() authCredentialsDTO: AuthCredentialsDTO): Promise&lt;User&gt; {
+    return this.authService.signUp(authCredentialsDTO);
+  }
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; a006562e2de7d9b64565680c8ac17ac1f23e926e
   @Post(&#x27;/login&#x27;)
   login(
     @Body() authCredentialsDTO: AuthCredentialsDTO,
